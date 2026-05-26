@@ -4,8 +4,16 @@
     box-sizing: border-box;
 }
 
+:root{
+    --body-background-color:#f405acf5;
+    --button-hover-background-color: #757575;
+    --button-hover-color:#fff;
+    --copyright-color:#fff;
+}
+
+
 body{
-    background-color: #f405acf5;
+    background-color: var(--body-background-color);
 }
 
 .container{
@@ -13,21 +21,14 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    padding: 10px;
+    padding: 30px;
     height: 300px;
     max-width: 1200px;
     width: 500px;
-    margin: 100px 300px 0;
-    /* background-color: #2d04f9; */
+    margin: 60px auto;
     border-radius: 10px;
-    
 }
 
-
-/* .container:hover{
-    transform: scale(1.2);
-    transition: 2s;
-} */
 
 input{
     padding: 6px;
@@ -43,8 +44,8 @@ button{
 }
 
 button:hover{
-    background-color: #757575;
-    color: #fff;
+    background-color: var(--button-hover-background-color);
+    color: var(--button-hover-color);
     border: none;
 }
 
@@ -58,43 +59,8 @@ input{
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    /* margin-bottom: -120px; */
     font-weight: 800;
-    color: #fff;
-}
-
-@media screen and (max-width:1040px) {
-    .container{
-        padding: 6em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: stretch;
-        /* margin: auto; */
-        width: 100%;
-        height: auto;
-        /* margin: 300px 30px 0; */
-    }
-    
-
-    body {
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }  
-
-    input, button{
-        width: 100%;
-        margin: 10px 0;
-        font-size: 2em;
-    }
-
-    #copyright{
-        margin-top: 150px;
-        font-size: 20px;
-    }
+    color: var(--copyright-color);
 }
 
 @media screen and (max-width:800px) {
@@ -109,14 +75,6 @@ input{
         /* margin: 280px 30px 0; */
     }
 
-    body {
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }   
-
     input, button{
         width: 100%;
         margin: 10px 0;
@@ -128,16 +86,47 @@ input{
     }
 }
 
-@media screen and (max-width:420px) {
-
-    input{
-        font-size: 10px;
-        width: 100%;
+@media screen and (max-width:490px) {
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
-    button{
-        width: 100%;
-        font-size: 10px;
+    #out-put{
+        height: 50px;
+        width: 300px;
+        font-size: 1.2em;
+    }
+    
+    #generate{
+        height: 50px;
+        width: 300px;
+    }
+    
+    #copybtn{
+        height: 50px;
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width:370px) {
+
+    #out-put{
+        font-size: 1em;
+        width: 200px;
+    }
+    
+    #generate{
+        width: 200px;
+        font-size: 1em;
+    }
+    
+    #copybtn{
+        width: 200px;
     }
 
     small{
