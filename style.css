@@ -5,7 +5,7 @@
 }
 
 :root{
-    --body-background-color:#f405acf5;
+    --body-background-color:#a30373f5;
     --button-hover-background-color: #757575;
     --button-hover-color:#fff;
     --copyright-color:#fff;
@@ -22,11 +22,24 @@ body{
     justify-content: center;
     align-items: stretch;
     padding: 30px;
-    height: 300px;
+    height: 350px;
     max-width: 1200px;
     width: 500px;
     margin: 60px auto;
     border-radius: 10px;
+    /* background-color: red; */
+}
+
+.container p{
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-weight: 800;
+    font-size: 25px;
+    border-radius:100px;
+    margin-bottom: 50px;
+    border-bottom: 4px solid rgb(255, 5, 213);
+    /* background: radial-gradient(circle, rgba(253, 9, 236, 1) 59%,rgba(13, 12, 13, 255) 100%) */
 }
 
 
@@ -84,6 +97,10 @@ input{
     small{
         font-weight: 800;
     }
+
+    p{
+        white-space: nowrap;
+    }
 }
 
 @media screen and (max-width:490px) {
@@ -122,11 +139,12 @@ input{
     
     #generate{
         width: 200px;
-        font-size: 1em;
+        font-size: 0.9em;
     }
     
     #copybtn{
         width: 200px;
+        font-size: 0.9em;
     }
 
     small{
