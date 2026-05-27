@@ -76,6 +76,10 @@ input{
     color: var(--copyright-color);
 }
 
+::placeholder{
+    text-align: center;
+}
+
 @media screen and (max-width:800px) {
     .container{
         padding: 6em;
